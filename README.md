@@ -10,4 +10,4 @@
        e.g. REACT_APP_SERVER_URL = "https://~"
     4. npm start
 
--   배포 링크 : deploy-wanted-pre-onboarding-frontend-2023-8ok6npei1-nr0617.vercel.app
+-   배포 링크 : https://deploy-wanted-pre-onboarding-frontend-2023-8ok6npei1-nr0617.vercel.app
