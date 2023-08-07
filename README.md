@@ -8,4 +8,4 @@
   2. npm install
   3. npm start
 
-- 배포 링크 : https://deploy-wanted-pre-onboarding-frontend-2023.vercel.app/
+- 배포 링크 : https://wanted-pre-onboarding-frontend-psi-beige.vercel.app/
