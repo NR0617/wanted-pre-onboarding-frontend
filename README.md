@@ -172,5 +172,5 @@ useEffect(() => {
   if (!!token) {
     navigate("/todo");
   }
-}, []);
+}, [token]);
 ```
