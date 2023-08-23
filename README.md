@@ -121,7 +121,21 @@ const handleCreateTodo = () => {
 
 - Read: localStorage에 토큰이 있으면 /todo에서 서버에서 응답으로 받아온 데이터를 map메서드로 보여줌
 
-- Update : 아이템의 내용을 수정하는 함수는 ListItem 컴포넌트에서 관리할 수 있게 제작
+```javascript
+{
+  data?.map((elm) => (
+    <ListItem
+      key={elm.id}
+      data={elm.todo}
+      id={elm.id}
+      isCompleted={elm.isCompleted}
+      deleteListItem={deleteListItem}
+    />
+  ));
+}
+```
+
+- Update : 아이템의 내용을 수정하는 함수는 ListItem 컴포넌트에서 관리할 수 있게 제작<br>  
   e.g. handleCheckbox, handleModifyInputData, handleUpdateTodo
 
 - Delete : 아이템 리스트의 추가, 삭제를 담당하는 함수이므로 Create와 함께 TodoList 컴포넌트에서 제작. 서버 응답의 상태코드가 성공이면 filter로 아이템을 제거
