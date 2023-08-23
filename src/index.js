@@ -10,29 +10,29 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <App />,
-        errorElement: <ErrorPage />,
-    },
-    {
-        path: "/signup",
-        element: <SignUp />,
-        errorElement: <ErrorPage />,
-    },
-    {
-        path: "/signin",
-        element: <SignIn />,
-    },
-    {
-        path: "/todo",
-        element: <TodoList />,
-    },
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/signin",
+    element: <SignIn />,
+  },
+  {
+    path: "/todo",
+    element: <TodoList />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode>
-        <RouterProvider router={router} />
-    </React.StrictMode>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );

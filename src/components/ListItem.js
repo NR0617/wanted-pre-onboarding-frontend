@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { deleteTodoApi, updateTodoApi } from "../utils/api";
 
-const ListItem = ({ data, id, isCompleted, onChangeListItem }) => {
+const ListItem = ({ data, id, isCompleted, deleteListItem }) => {
   const [isModified, setIsModified] = useState(false);
   const handleModify = () => {
     setIsModified((prev) => !prev);
@@ -18,7 +18,7 @@ const ListItem = ({ data, id, isCompleted, onChangeListItem }) => {
     deleteTodoApi(token, id)
       .then((res) => {
         if (res.status === 204) {
-          onChangeListItem(id);
+          deleteListItem(id);
         } else {
           throw new Error();
         }
